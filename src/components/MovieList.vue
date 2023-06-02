@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import axios from "axios";
 
-const APIkey = `e552c8258b3f71b20f3fc069ca964a73`;
+const APIkey = `a75766149f058c94cbde1356c3161786`;
 const movieData = ref(false);
 const trailerData = ref(false);
 const movieID = ref(null);
@@ -43,16 +43,17 @@ const getTMDBData = async () => {
       <form action="#" id="navbar">
         <label for="select-movies">Select Movies</label>
         <select v-model="movieID">
-          <option value="502356">The Super Mario Bros. Movie</option>
-          <option value="677179">Creed III</option>
-          <option value="76600">Avatar: The Way of Water</option>
-          <option value="638974">Murder Mystery 2</option>
-          <option value="594767">Shazam! Fury of the Gods</option>
-          <option value="816904">Momias</option>
-          <option value="603692">John Wick: Chapter 4</option>
-          <option value="758323">The Pope's Exorcist</option>
-          <option value="315162">Puss in Boots: The Last Wish</option>
-          <option value="842945">Supercell</option>
+          <option value="857">Saving Private Ryan</option>
+          <option value="603692">Creed III</option>
+          <option value="39514">Avatar: The Way of Water</option>
+          <option value="677179">Murder Mystery 2</option>
+          <option value="19995">Shazam! Fury of the Gods</option>
+          <option value="502356">Momias</option>
+          <option value="798286">John Wick: Chapter 4</option>
+          <option value="405775">The Pope's Exorcist</option>
+          <option value="4247">Puss in Boots: The Last Wish</option>
+          <option value="315162">Supercell</option>
+          <option value="12162">Supercell</option>
         </select>
         <button @click="getTMDBData">Get Movie</button>
       </form>
@@ -98,7 +99,7 @@ const getTMDBData = async () => {
 
 <style scoped>
 .body {
-  background-color: rgb(69, 9, 11);
+  background-color: black;
   height: 100vh;
   overflow: hidden;
 }
