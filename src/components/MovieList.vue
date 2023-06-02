@@ -26,16 +26,7 @@ const getTMDBData = async () => {
 </script>
 
 <template>
-  <div
-    class="body"
-    :style="{
-      backgroundImage: bActive
-        ? `url(https://image.tmdb.org/t/p/w500${movieData.backdrop_path})`
-        : `none`,
-      backgroundRepeat: `no-repeat`,
-      backgroundSize: `cover`,
-    }"
-  >
+  <div class="body">
     <section
       id="container"
       :style="{ backgroundColor: bActive ? `rgba(0,0,0,0.6)` : `none` }"
@@ -71,17 +62,18 @@ const getTMDBData = async () => {
         </div>
         <div id="movie-info">
           <h1 id="title">{{ movieData.title }}</h1>
+          <h2 id="tagline">{{ movieData.tagline }}</h2>
+          <p id="overview">Synopsis: {{ movieData.overview }}</p>
           <br />
-          <h4 id="average-score">
-            Average Score: {{ movieData.vote_average }}
-          </h4>
+
+          <h4 id="average-score">Average Score: {{ movieData.vote_average }}</h4>
           <h4 id="popularity">Popularity: {{ movieData.vote_count }}</h4>
           <h4 id="runtime">Runtime: {{ movieData.runtime }}</h4>
           <h4 id="release-date">Release Date: {{ movieData.release_date }}</h4>
           <h4 id="revenue">Revenue: {{ movieData.revenue }}</h4>
           <h4 id="genres">Genre: {{ movieData.genres[0].name }}</h4>
           <br />
-          <p id="overview">Synopsis: {{ movieData.overview }}</p>
+
           <iframe
             id="trailer"
             :src="`https://www.youtube.com/embed/${
@@ -131,9 +123,6 @@ h1 {
   flex-direction: row;
   max-width: 48em;
   background-color: black;
-  border-radius: 0.5%;
-  border-color: purple;
-  border-style: groove;
 }
 
 #poster {
