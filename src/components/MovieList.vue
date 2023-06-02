@@ -23,6 +23,7 @@ const getTMDBData = async () => {
 
   bActive = true;
 };
+
 </script>
 
 <template>
@@ -90,58 +91,58 @@ const getTMDBData = async () => {
 </template>
 
 <style scoped>
-.body {
-  background-color: black;
-  height: 100vh;
-  overflow: hidden;
-}
+  .body {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-h1 {
-  font-size: 3ch;
-}
+  h1 {
+    font-size: 3ch;
+  }
 
-#container {
-  height: 100vh;
-  display: flex;
-  gap: 0.5em;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  color: whitesmoke;
-}
+  #container {
+    height: 100vh;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: whitesmoke;
+  }
 
-#navbar {
-  gap: 0.5em;
-  display: flex;
-  position: absolute;
-  top: 0;
-  padding: 1.5em;
-}
+  #navbar {
+    gap: 0.5em;
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding: 1.5em;
+  }
 
-#movie-section {
-  display: flex;
-  flex-direction: row;
-  max-width: 48em;
-  background-color: black;
-}
+  #movie-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 48em;
+    background-color: black;
+  }
 
-#poster {
-  max-height: 36em;
-}
+  #poster {
+    max-height: 36em;
+  }
 
-#title {
-  text-decoration: underline;
-}
+  #title {
+    text-decoration: underline;
+  }
 
-#movie-info {
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
+  #movie-info {
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
 
-#trailer {
-  height: 15em;
-  width: 20em;
-  margin: 1em 1em 0em 1em;
-}
+  #trailer {
+    height: 15em;
+    width: 20em;
+    margin: 1em 1em 0em 1em;
+  }
 </style>
