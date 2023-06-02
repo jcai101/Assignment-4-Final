@@ -44,16 +44,16 @@ const getTMDBData = async () => {
         <label for="select-movies">Select Movies</label>
         <select v-model="movieID">
           <option value="857">Saving Private Ryan</option>
-          <option value="603692">Creed III</option>
-          <option value="39514">Avatar: The Way of Water</option>
-          <option value="677179">Murder Mystery 2</option>
-          <option value="19995">Shazam! Fury of the Gods</option>
-          <option value="502356">Momias</option>
-          <option value="798286">John Wick: Chapter 4</option>
-          <option value="405775">The Pope's Exorcist</option>
-          <option value="4247">Puss in Boots: The Last Wish</option>
-          <option value="315162">Supercell</option>
-          <option value="12162">Supercell</option>
+          <option value="603692">John Wick: Chapter 4</option>
+          <option value="39514">RED</option>
+          <option value="677179">Creed III</option>
+          <option value="19995">Avatar</option>
+          <option value="502356">The Super Mario Bros. Movie</option>
+          <option value="798286">Beau Is Afraid</option>
+          <option value="405775">The Wall</option>
+          <option value="4247">Scary Movie</option>
+          <option value="315162">Puss in Boots: The Last Wish</option>
+          <option value="12162">The Hurt Locker</option>
         </select>
         <button @click="getTMDBData">Get Movie</button>
       </form>
@@ -114,8 +114,8 @@ h1 {
   gap: 0.5em;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: aliceblue;
+  align-items: left;
+  color: whitesmoke;
 }
 
 #navbar {
@@ -132,8 +132,8 @@ h1 {
   max-width: 48em;
   background-color: black;
   border-radius: 0.5%;
-  border-color: bisque;
-  border-style: double;
+  border-color: purple;
+  border-style: groove;
 }
 
 #poster {
