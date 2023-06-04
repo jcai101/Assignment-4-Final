@@ -27,11 +27,8 @@ const getTMDBData = async () => {
 </script>
 
 <template>
-  <div class="body">
-    <section
-      id="container"
-      :style="{ backgroundColor: bActive ? `rgba(0,0,0,0.6)` : `none` }"
-    >
+  <div class="main">
+    <section id="container">
       <form action="#" id="navbar">
         <label for="select-movies">Select Movies</label>
         <select v-model="movieID">
@@ -91,7 +88,7 @@ const getTMDBData = async () => {
 </template>
 
 <style scoped>
-  .body {
+  .main {
     background-color: black;
     height: 100vh;
     overflow: hidden;
