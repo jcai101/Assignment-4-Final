@@ -60,16 +60,21 @@ const getTMDBData = async () => {
         </div>
         <div id="movie-info">
           <h1 id="title">{{ movieData.title }}</h1>
-          <h2 id="tagline">{{ movieData.tagline }}</h2>
+          <p id="production">Production Companies: {{movieData.production_companies[0].name}}</p>
+          <p id="tagline">{{ movieData.tagline }}</p>
+          <br />
           <p id="overview">Synopsis: {{ movieData.overview }}</p>
           <br />
 
-          <h4 id="average-score">Average Score: {{ movieData.vote_average }}</h4>
-          <h4 id="popularity">Popularity: {{ movieData.vote_count }}</h4>
-          <h4 id="runtime">Runtime: {{ movieData.runtime }}</h4>
-          <h4 id="release-date">Release Date: {{ movieData.release_date }}</h4>
-          <h4 id="revenue">Revenue: {{ movieData.revenue }}</h4>
+
           <h4 id="genres">Genre: {{ movieData.genres[0].name }}</h4>
+          <h4 id="popularity">Popularity: {{ movieData.vote_count }}</h4>
+          <h4 id="average-score">Average Score: {{ movieData.vote_average }}</h4>
+          
+          <h4 id="runtime">Runtime: {{ movieData.runtime }} mins</h4>
+          <h4 id="release-date">Release Date: {{ movieData.release_date }}</h4>
+          <h4 id="revenue">Revenue: ${{ movieData.revenue }}</h4>
+          
           <br />
 
           <iframe
