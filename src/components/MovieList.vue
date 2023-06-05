@@ -30,7 +30,7 @@ const getTMDBData = async () => {
   <div class="main">
     <section id="container">
       <form action="#" id="navbar">
-        <label for="select-movies">Select Movies</label>
+        <label for="select-movies">Select</label>
         <select v-model="movieID">
           <option value="857">Saving Private Ryan</option>
           <option value="603692">John Wick: Chapter 4</option>
@@ -62,20 +62,16 @@ const getTMDBData = async () => {
           <h1 id="title">{{ movieData.title }}</h1>
           <p id="production">Production Companies: {{movieData.production_companies[0].name}}</p>
           <p id="tagline">{{ movieData.tagline }}</p>
-          <br />
           <p id="overview">Synopsis: {{ movieData.overview }}</p>
           <br />
-
 
           <h4 id="genres">Genre: {{ movieData.genres[0].name }}</h4>
           <h4 id="popularity">Popularity: {{ movieData.vote_count }}</h4>
           <h4 id="average-score">Average Score: {{ movieData.vote_average }}</h4>
-          
+        
           <h4 id="runtime">Runtime: {{ movieData.runtime }} mins</h4>
           <h4 id="release-date">Release Date: {{ movieData.release_date }}</h4>
           <h4 id="revenue">Revenue: ${{ movieData.revenue }}</h4>
-          
-          <br />
 
           <iframe
             id="trailer"
@@ -93,17 +89,15 @@ const getTMDBData = async () => {
 </template>
 
 <style scoped>
+
   .main {
     background-color: black;
-    height: 100vh;
     overflow: hidden;
+    /* height: 100vh; */
+    /* top: 100px; Set the height of .main to 100vh */
   }
 
-  h1 {
-    font-size: 3ch;
-  }
-
-  #container {
+    #container {
     height: 100vh;
     display: flex;
     gap: 0.5em;
@@ -111,10 +105,14 @@ const getTMDBData = async () => {
     justify-content: center;
     align-items: left;
     color: whitesmoke;
+  }  
+
+  h1 {
+    font-size: 3ch;
   }
 
   #navbar {
-    gap: 0.5em;
+    gap: 0.2em;
     display: flex;
     position: absolute;
     top: 0;
@@ -129,7 +127,7 @@ const getTMDBData = async () => {
   }
 
   #poster {
-    max-height: 36em;
+    max-height: 95vh;
   }
 
   #title {
@@ -147,4 +145,5 @@ const getTMDBData = async () => {
     width: 20em;
     margin: 1em 1em 0em 1em;
   }
+ 
 </style>
